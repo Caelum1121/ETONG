@@ -125,3 +125,4 @@ const scrollReveal = function () {
 scrollReveal();
 window.addEventListener("scroll", scrollReveal);
 
+

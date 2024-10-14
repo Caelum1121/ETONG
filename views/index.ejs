@@ -1,95 +1,12 @@
 <!DOCTYPE html>
 
-<head>
-    <meta charset="utf-8">
-    <title>E-TONG - Dairy Website</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Favicon -->
-    <link href="img/Logo.png" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+<%- include('partials/header.ejs') %>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
-    </div>
-    <!-- Spinner End -->
-
-
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-0">
-        <div class="row g-0 d-none d-lg-flex">
-            <div class="col-lg-6 ps-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center text-light">
-                    <span>Follow Us:</span>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-6 text-end">
-                <div class="h-100 bg-secondary d-inline-flex align-items-center text-dark py-2 px-4">
-                    <span class="me-2 fw-semi-bold"><i class="fa fa-phone-alt me-2"></i>Call Us:</span>
-                    <span>+84 902 819 544</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
-
-     <!-- Language Selection Dropdown -->
-    <div class="container-fluid py-2">
-        <div class="d-flex justify-content-end align-items-center">
-            <label for="language-select" class="form-label me-2 mb-0">Select Language:</label>
-            <select id="language-select" class="form-select language-dropdown">
-                <option value="en">English</option>
-                <option value="zh-Hant">Chinese</option>
-            </select>
-        </div>
-    </div>
+    <%- include('partials/spinner.ejs') %>
 
     <div class="english">
-            <!-- Navbar Start -->
-            <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
-                <a href="index.html" class="navbar-brand d-flex align-items-center">
-                    <h1 class="m-0">E-TONG</h1>
-                </a>
-                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto p-4 p-lg-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="product.html" class="nav-item nav-link">Products</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                </div>
-            </nav>
-            <!-- Navbar End -->
+        <%- include('partials/nav.ejs') %>
     
     
             <!-- Carousel Start -->
@@ -104,7 +21,7 @@
                                         <div class="col-lg-8 text-start">
                                             <p class="fs-4 text-white">Welcome to our Website</p>
                                             <h1 class="display-1 text-white mb-5 animated slideInRight">The Agents of Westland Milk Products</h1>
-                                            <a href="about.html" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight">Explore More</a>
+                                            <a href="about" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight">Explore More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -118,7 +35,7 @@
                                         <div class="col-lg-8 text-end">
                                             <p class="fs-4 text-white">Welcome to our Website</p>
                                             <h1 class="display-1 text-white mb-5 animated slideInRight">Best Organic Dairy Products</h1>
-                                            <a href="product.html" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft">Explore More</a>
+                                            <a href="product" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft">Explore More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -176,7 +93,7 @@
                                     <h5 class="mb-3">Organic Products</h5>
                                 </div>
                             </div>
-                            <a class="btn btn-secondary rounded-pill py-3 px-5" href="about.html">Explore More</a>
+                            <a class="btn btn-secondary rounded-pill py-3 px-5" href="about">Explore More</a>
                         </div>
                     </div>
                 </div>
@@ -224,7 +141,7 @@
                             <p><i class="fa fa-check text-primary me-3"></i>Pure and Natural</p>
                             <p><i class="fa fa-check text-primary me-3"></i>International Certification</p>
                             <p><i class="fa fa-check text-primary me-3"></i>Family Nutrition</p>
-                            <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3" href="service.html">Explore More</a>
+                            <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3" href="service">Explore More</a>
                         </div>
                     </div>
                 </div>
@@ -304,73 +221,12 @@
                         <h1 class="mb-5">Our Dairy Products For Healthy Living</h1>
                     </div>
     
-                    <a class="btn btn-secondary rounded-pill py-3 px-5 mt-5 d-flex " href="product.html">Explore More</a>
+                    <a class="btn btn-secondary rounded-pill py-3 px-5 mt-5 d-flex " href="product">Explore More</a>
                 </div>
             </div>
             <!-- Product End -->
     
-            <!-- Footer Start -->
-            <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-                <div class="container py-5">
-                    <div class="row g-5">
-                        <div class="col-lg-3 col-md-6">
-                            <h5 class="text-white mb-4">Contact Us</h5>
-                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+84 902 819 544</p>
-                            <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                            <div class="d-flex pt-3">
-                                <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-                                <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <h5 class="text-white mb-4">Quick Links</h5>
-                            <a class="btn btn-link" href="">About Us</a>
-                            <a class="btn btn-link" href="">Contact Us</a>
-                            <a class="btn btn-link" href="">Our Services</a>
-                            <a class="btn btn-link" href="">Terms & Condition</a>
-                            <a class="btn btn-link" href="">Support</a>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <h5 class="text-white mb-4">Business Hours</h5>
-                            <p class="mb-1">Monday - Friday</p>
-                            <h6 class="text-light">09:00 am - 07:00 pm</h6>
-                            <p class="mb-1">Saturday</p>
-                            <h6 class="text-light">09:00 am - 12:00 pm</h6>
-                            <p class="mb-1">Sunday</p>
-                            <h6 class="text-light">Closed</h6>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <h5 class="text-white mb-4">Newsletter</h5>
-                            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                            <div class="position-relative w-100">
-                                <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                                <button type="button" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Footer End -->
-    
-    
-            <!-- Copyright Start -->
-            <div class="container-fluid bg-secondary text-body copyright py-4">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="fw-semi-bold" href="#">ShengGuo - Dairy Website</a>, All Right Reserved.
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Copyright End -->
-    
+            <%- include('partials/footer.ejs') %>
     
             <!-- Back to Top -->
             <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
@@ -379,25 +235,7 @@
 
     <div class="chinese" style="display: none;">
 
-        <!-- 导航栏开始 -->
-        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
-            <a href="index.html" class="navbar-brand d-flex align-items-center">
-                <h1 class="m-0">E-TONG</h1>
-            </a>
-            <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link active">首页</a>
-                    <a href="about.html" class="nav-item nav-link">关于我们</a>
-                    <a href="service.html" class="nav-item nav-link">服务</a>
-                    <a href="product.html" class="nav-item nav-link">产品</a>
-                    <a href="contact.html" class="nav-item nav-link">联系我们</a>
-                </div>
-            </div>
-        </nav>
-        <!-- 导航栏结束 -->
+        <%- include('partials/nav-zh.ejs') %>
 
         <!-- 轮播图开始 -->
         <div class="container-fluid px-0 mb-5">
@@ -411,7 +249,7 @@
                                     <div class="col-lg-8 text-start">
                                         <p class="fs-4 text-white">欢迎来到我们的网站</p>
                                         <h1 class="display-1 text-white mb-5 animated slideInRight">紐西蘭产品代理商</h1>
-                                        <a href="about.html" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight">了解更多</a>
+                                        <a href="about" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight">了解更多</a>
                                     </div>
                                 </div>
                             </div>
@@ -425,7 +263,7 @@
                                     <div class="col-lg-8 text-end">
                                         <p class="fs-4 text-white">欢迎来到我们的网站</p>
                                         <h1 class="display-1 text-white mb-5 animated slideInRight">最佳天然乳制品</h1>
-                                        <a href="product.html" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft">了解更多</a>
+                                        <a href="product" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft">了解更多</a>
                                     </div>
                                 </div>
                             </div>
@@ -480,7 +318,7 @@
                                 <h5 class="mb-3">天然产品</h5>
                             </div>
                         </div>
-                        <a class="btn btn-secondary rounded-pill py-3 px-5" href="about.html">了解更多</a>
+                        <a class="btn btn-secondary rounded-pill py-3 px-5" href="about">了解更多</a>
                     </div>
                 </div>
             </div>
@@ -530,7 +368,7 @@
                         <p><i class="fa fa-check text-primary me-3"></i>纯天然</p>
                         <p><i class="fa fa-check text-primary me-3"></i>国际认证</p>
                         <p><i class="fa fa-check text-primary me-3"></i>家庭营养</p>
-                        <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3" href="service.html">了解更多</a>
+                        <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3" href="service">了解更多</a>
                     </div>
                 </div>
             </div>
@@ -608,70 +446,12 @@
                     <h1 class="mb-5">我们的乳制品，健康生活的选择</h1>
                 </div>
 
-                <a class="btn btn-secondary rounded-pill py-3 px-5 mt-5 d-flex" href="product.html">了解更多</a>
+                <a class="btn btn-secondary rounded-pill py-3 px-5 mt-5 d-flex" href="product">了解更多</a>
             </div>
         </div>
         <!-- 产品结束 -->
 
-        <!-- Footer Start -->
-        <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">联系我们</h5>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+84 902 819 544</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                        <div class="d-flex pt-3">
-                            <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">快速链接</h5>
-                        <a class="btn btn-link" href="">关于我们</a>
-                        <a class="btn btn-link" href="">联系我们</a>
-                        <a class="btn btn-link" href="">我们的服务</a>
-                        <a class="btn btn-link" href="">条款与条件</a>
-                        <a class="btn btn-link" href="">支持</a>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">营业时间</h5>
-                        <p class="mb-1">周一 - 周五</p>
-                        <h6 class="text-light">上午 9:00 - 下午 7:00</h6>
-                        <p class="mb-1">周六</p>
-                        <h6 class="text-light">上午 9:00 - 中午 12:00</h6>
-                        <p class="mb-1">周日</p>
-                        <h6 class="text-light">休息</h6>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">新闻订阅</h5>
-                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                        <div class="position-relative w-100">
-                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="你的邮箱">
-                            <button type="button" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">注册</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End -->
-
-        <!-- Copyright Start -->
-        <div class="container-fluid bg-secondary text-body copyright py-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="fw-semi-bold" href="#">ShengGuo - 乳制品网站</a>, 保留所有权利。
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        设计来自 <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Copyright End -->
+        <%- include('partials/footer-zh.ejs') %>
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
