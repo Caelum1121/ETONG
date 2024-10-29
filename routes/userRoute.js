@@ -20,7 +20,15 @@ user_route.post('/contact', userController.insertUser);
 
 user_route.get('/product', userController.loadProduct);
 
+user_route.get('/product/:id', userController.loadDetail);
+
+user_route.get('/product-zh', userController.LoadProductzh);
+
+user_route.get('/product-zh/:id', userController.loadDetailzh);
+
 user_route.get('/service',  userController.loadService);
+
+
 
 module.exports = user_route; 
 

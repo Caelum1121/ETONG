@@ -3,7 +3,43 @@
 <%- include('partials/header.ejs') %>
 
 <body>
-    <%- include('partials/spinner.ejs') %>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-0">
+        <div class="row g-0 d-none d-lg-flex">
+            <div class="col-lg-6 ps-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center text-light">
+                    <span>Follow Us:</span>
+                    <a class="btn btn-link text-light" href="https://line.me/ti/p/~czlmn0324"><i class="fab fa-line"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-end">
+                <div class="h-100 bg-secondary d-inline-flex align-items-center text-dark py-2 px-4">
+                    <span class="me-2 fw-semi-bold"><i class="fa fa-phone-alt me-2"></i>Call Us:</span>
+                    <span>+886 912 003 885</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Language Selection Dropdown -->
+    <div class="container-fluid py-2">
+        <div class="d-flex justify-content-end align-items-center">
+            <label for="language-select" class="form-label me-2 mb-0">Select Language:</label>
+            <select id="language-select" class="form-select language-dropdown">
+                <option value="zh-Hant">Chinese</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </div>
 
     <div class="english">
         
@@ -171,7 +207,7 @@
                     </div>
 
                     <ul class="has-scrollbar">
-                        <% powder.forEach(function(product) { %>
+                        <% Powder.forEach(function(product) { %>
                             <li class="scrollbar-item">
                                 <div class="shop-card">
                                     <div class="card-banner img-holder" style="--width: 540; --height: 720;">
@@ -190,7 +226,7 @@
                                     </div>
                                     <div class="card-content">
                                         <h3>
-                                            <a href="/product/<%= product.id %>" class="card-title"><%= product.brand %> <br> <%= product.name %></a>
+                                            <a href="/product-zh/<%= product.id %>" class="card-title"><%= product.brand %> <br> <%= product.name %></a>
                                         </h3>
 
                                         <div class="card-rating">
@@ -223,7 +259,7 @@
                     </div>
 
                     <ul class="has-scrollbar">
-                        <% butter.forEach(function(product) { %>
+                        <% Butter.forEach(function(product) { %>
                             <li class="scrollbar-item">
                                 <div class="shop-card">
                                     <div class="card-banner img-holder" style="--width: 540; --height: 720;">
@@ -242,7 +278,7 @@
                                     </div>
                                     <div class="card-content">
                                         <h3>
-                                            <a href="/product/<%= product.id %>" class="card-title"><%= product.brand %> <br> <%= product.name %></a>
+                                            <a href="/product-zh/<%= product.id %>" class="card-title"><%= product.brand %> <br> <%= product.name %></a>
                                         </h3>
 
                                         <div class="card-rating">
@@ -275,7 +311,7 @@
                     </div>
 
                     <ul class="has-scrollbar">
-                        <% flavours.forEach(function(product) { %>
+                        <% Flavours.forEach(function(product) { %>
                             <li class="scrollbar-item">
                                 <div class="shop-card">
                                     <div class="card-banner img-holder" style="--width: 540; --height: 720;">
@@ -294,7 +330,7 @@
                                     </div>
                                     <div class="card-content">
                                         <h3>
-                                            <a href="/product/<%= product.id %>" class="card-title"><%= product.brand %> <br> <%= product.name %></a>
+                                            <a href="/product-zh/<%= product.id %>" class="card-title"><%= product.brand %> <br> <%= product.name %></a>
                                         </h3>
 
                                         <div class="card-rating">
@@ -457,17 +493,6 @@
         }
       });
 
-      // Set the default selection based on browser language
-        document.getElementById('language-select').value = lang;
-
-        // Update the displayed language based on browser language
-        updateLanguage(lang);
-
-        // Add event listener for dropdown change
-        document.getElementById('language-select').addEventListener('change', function() {
-        const selectedLang = this.value;
-        updateLanguage(selectedLang);
-        });
     </script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

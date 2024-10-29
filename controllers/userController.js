@@ -1,6 +1,6 @@
 const User = require('../models/userModel');
 const Product = require('../models/productModel');
-
+const Productzh = require('../models/productzhModel');
 
 const loadProduct = async (req, res) => {
     let powder = [];
@@ -31,6 +31,7 @@ const loadProduct = async (req, res) => {
     // Render the view with the fetched events
     res.render('product', { powder, butter, flavours });
 };
+
 
 const loadIndex = (req, res) => {
     try {
@@ -99,7 +100,73 @@ const load404 = async (req, res) => {
     }
 }
 
+const loadDetail = async (req, res) => {
+    try {
+        if (req.params.id === 'favicon.ico') {
+            return res.status(404).send('Not found');
+        }
+        
+        const product = await Product.findById(req.params.id);
+        if (!product) {
+            console.log('Product not found');
+            return res.status(404).send('Product not found');
+        }
+        console.log('Product:', product);
+        res.render('detail', { product });
+    } catch (error) {
+        console.error('Error loading product:', error);
+        res.status(500).send('Server error');
+    }
+};
 
+const LoadProductzh = async (req, res) => {
+    let Powder = [];
+    let Butter = [];
+    let Flavours = [];
+    
+    try {
+        Powder = await Productzh.find({ category: '粉类' });
+        console.log('Powder fetched successfully');
+    } catch (err) {
+        console.error('Error fetching Powder Products:', err.message);
+    }
+    
+    try {
+        Butter = await Productzh.find({ category: '黄油' });
+        console.log('Butter fetched successfully');
+    } catch (err) {
+        console.error('Error fetching Butter Products:', err.message);
+    }
+    
+    try {
+        Flavours = await Productzh.find({ category: '风味' });
+        console.log('Flavours fetched successfully');
+    } catch (err) {
+        console.error('Error fetching Flavours Products:', err.message);
+    }
+
+    // Render the view with the fetched events
+    res.render('product-zh', { Powder, Butter, Flavours });
+}
+
+const loadDetailzh = async (req, res) => {
+    try {
+        if (req.params.id === 'favicon.ico') {
+            return res.status(404).send('Not found');
+        }
+        
+        const product = await Productzh.findById(req.params.id);
+        if (!product) {
+            console.log('Product not found');
+            return res.status(404).send('Product not found');
+        }
+        console.log('Product:', product);
+        res.render('detail', { product });
+    } catch (error) {
+        console.error('Error loading product:', error);
+        res.status(500).send('Server error');
+    }
+};
 
 module.exports = {
     loadProduct,
@@ -108,5 +175,9 @@ module.exports = {
     loadAbout,
     loadContact,
     loadService,
-    load404
+    load404,
+    loadDetail,
+    LoadProductzh,
+    loadDetailzh
+
 };
