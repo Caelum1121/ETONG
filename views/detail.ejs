@@ -16,10 +16,10 @@
         <div class = "product-imgs">
           <div class = "img-display">
             <div class = "img-showcase">
-              <img src = "/img/<%= product.image %>" style="width: 450px; height: 540px;" alt = "shoe image">
-              <img src = "/product_images/shoe_2.jpg" alt = "shoe image">
-              <img src = "/product_images/shoe_3.jpg" alt = "shoe image">
-              <img src = "/product_images/shoe_4.jpg" alt = "shoe image">
+              <img src = "/img/<%= product.image %>" style="width: 400px; height: 400px;" alt = "shoe image">
+              <img src = "/product_images/<%= product.ingredient %>" alt = "shoe image">
+              <img src = "/product_images/<%= product.image2 %>" alt = "shoe image">
+              <img src = "/product_images/<%= product.brandimg %>" alt = "shoe image">
             </div>
           </div>
           <div class = "img-select">
@@ -30,17 +30,17 @@
             </div>
             <div class = "img-item">
               <a href = "#" data-id = "2">
-                <img src = "/product_images/shoe_2.jpg" alt = "shoe image">
+                <img src = "/product_images/<%= product.ingredient %>" alt = "shoe image">
               </a>
             </div>
             <div class = "img-item">
               <a href = "#" data-id = "3">
-                <img src = "/product_images/shoe_3.jpg" alt = "shoe image">
+                <img src = "/product_images/<%= product.image2 %>" alt = "shoe image">
               </a>
             </div>
             <div class = "img-item">
               <a href = "#" data-id = "4">
-                <img src = "/product_images/shoe_4.jpg" alt = "shoe image">
+                <img src = "/product_images/<%= product.brandimg %>" alt = "shoe image">
               </a>
             </div>
           </div>
@@ -60,8 +60,8 @@
 
           <div class = "product-detail">
             <h2>about this item: </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+            <p><%= product.description %></p>
+          
             <ul>
               <li>Brand: <span><%= product.brand %></span></li>
               <li>Category: <span><%= product.category %></span></li>

@@ -8,12 +8,15 @@ const productzhSchema = new mongoose.Schema({
   brand: {
     type: String,
   },
+  brandimg: {
+    type: String,
+  },
   description: {
     type: String,
   },
   category: {
     type: String,
-    enum: ['粉类', '黄油', '风味'],
+    enum: ['奶粉', '黄油', '调味品'],
     required: [true, 'This field is required.'],
   },
   image: {

@@ -125,7 +125,7 @@ const LoadProductzh = async (req, res) => {
     let Flavours = [];
     
     try {
-        Powder = await Productzh.find({ category: '粉类' });
+        Powder = await Productzh.find({ category: '奶粉' });
         console.log('Powder fetched successfully');
     } catch (err) {
         console.error('Error fetching Powder Products:', err.message);
@@ -139,7 +139,7 @@ const LoadProductzh = async (req, res) => {
     }
     
     try {
-        Flavours = await Productzh.find({ category: '风味' });
+        Flavours = await Productzh.find({ category: '调味品' });
         console.log('Flavours fetched successfully');
     } catch (err) {
         console.error('Error fetching Flavours Products:', err.message);

@@ -8,6 +8,9 @@ const productSchema = new mongoose.Schema({
   brand: {
     type: String,
   },
+  brandimg: {
+    type: String,
+  },
   description: {
     type: String,
   },
@@ -23,7 +26,10 @@ const productSchema = new mongoose.Schema({
   ingredient: {
     type: String,
     required: [true, 'This field is required.'],
-  }
+  },
+  image2: {
+    type: String,
+  },
 });
 
 // Full-text search index
