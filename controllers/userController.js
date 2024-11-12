@@ -168,6 +168,14 @@ const loadDetailzh = async (req, res) => {
     }
 };
 
+const loadIndexzh = (req, res) => {
+    try {
+        res.render('index-zh');
+    } catch (error) {
+        console.log('Load Register Error:', error.message);
+    }
+}
+
 module.exports = {
     loadProduct,
     loadIndex,
@@ -178,6 +186,7 @@ module.exports = {
     load404,
     loadDetail,
     LoadProductzh,
-    loadDetailzh
+    loadDetailzh,
+    loadIndexzh
 
 };

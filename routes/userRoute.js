@@ -12,6 +12,8 @@ user_route.use(express.static(path.join(__dirname, '../public')));
 // Route definitions
 user_route.get('/', userController.loadIndex);
 
+user_route.get('/index-zh', userController.loadIndexzh);
+
 user_route.get('/about',userController.loadAbout);
 
 user_route.get('/contact',  userController.loadContact);
