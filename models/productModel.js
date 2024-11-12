@@ -30,6 +30,12 @@ const productSchema = new mongoose.Schema({
   image2: {
     type: String,
   },
+  ingredient2: {
+    type: String,
+  },
+  package: {
+    type: String,
+  },
 });
 
 // Full-text search index

@@ -10,17 +10,21 @@ const products = [
         "description": "我们的脱脂奶粉低脂、无添加物，具有良好的分散性和溶解性。我们提供一系列脱脂奶粉，以满足不同的功能需求和多种热处理要求。",
         "category": "奶粉",
         "ingredient": "westlandrange.jpg",
-        "image2": "application1.jpg"
+        "image2": "application1.jpg",
+        ingredient2: "蛋白含量32%以上",
+        package: "25公斤袋裝，內有PE內袋"
     },
     {
-        "image": "product-02.jpg",
-        "name": "乳清蛋白浓缩物",
+        image: "product-02.jpg",
+        name: "乳清蛋白浓缩物",
         "brand": "Westland",
         "brandimg": "westland.jpg",
         "description": "富含蛋白质，含有所有九种必需氨基酸，且易于身体快速吸收，以实现快速的营养供给。我们的RapidPRO™乳清蛋白浓缩物非常适合促进肌肉生长、力量和高性能表现。",
         "category": "奶粉",
         "ingredient": "westlandrange.jpg",
-        "image2": "application2.jpg"
+        "image2": "application2.jpg",
+        ingredient2: "蛋白含量80%以上",
+        package: "20公斤袋裝，內有PE內袋"
     },
     {
         "image": "product-03.jpg",
@@ -30,7 +34,9 @@ const products = [
         "description": "Kalla全脂奶粉含26%脂肪，通过喷雾干燥新鲜巴氏杀菌牛奶制成。它是一种可溶性粉末，具有最低26%的乳脂含量和甜美的味道，广泛应用于营养饮料、冰淇淋、糖果、酸奶等。",
         "category": "奶粉",
         "ingredient": "ingredient2.jpg",
-        "image2": "application3.jpg"
+        "image2": "application3.jpg",
+        ingredient2: "乳脂含量26%以上",
+        package: "25公斤袋裝，內有PE內袋"
     },
     {
         "image": "product-04.jpg",
@@ -50,7 +56,9 @@ const products = [
         "description": "采用新鲜巴氏杀菌奶油制作，来自草饲奶牛，纯度达99.9%以上。无水乳脂富有营养，是在多种食品和烘焙应用中增加天然奶香风味的绝佳选择。",
         "category": "黄油",
         "ingredient": "westlandrange.jpg",
-        "image2": "application4.jpg"
+        "image2": "application4.jpg",
+        ingredient2: "脂肪含量99.9%以上",
+        package: "25公斤袋裝，內有PE內袋"
     },
     {
         "image": "product-06.jpg",
@@ -60,7 +68,9 @@ const products = [
         "description": "用高质量新鲜奶油制成的咸味优质黄油。适用于烘焙食品、涂抹酱和多种食品产品。",
         "category": "黄油",
         "ingredient": "provico3.jpg",
-        "image2": "provico2.jpg"
+        "image2": "provico2.jpg",
+        ingredient2: "脂肪含量80%以上",
+        package: "25公斤纸箱，內有PE內袋"
     },
     {
         "image": "product-06.jpg",
@@ -70,7 +80,9 @@ const products = [
         "description": "用高质量新鲜奶油制成的无盐优质黄油。适用于烘焙食品、涂抹酱和多种食品产品。",
         "category": "黄油",
         "ingredient": "provico1.jpg",
-        "image2": "provico2.jpg"
+        "image2": "provico2.jpg",
+        ingredient2: "脂肪含量80%以上",
+        package: "25公斤纸箱，內有PE內袋"
     },
     {
         "image": "product-08.jpg",

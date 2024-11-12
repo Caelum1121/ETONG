@@ -26,7 +26,16 @@ const productzhSchema = new mongoose.Schema({
   ingredient: {
     type: String,
     required: [true, 'This field is required.'],
-  }
+  },
+  ingredient2: {
+    type: String,
+  },
+  package: {
+    type: String,
+  },
+  image2: {
+    type: String,
+  },
 });
 
 // Full-text search index

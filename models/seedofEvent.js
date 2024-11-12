@@ -11,6 +11,8 @@ const products = [
         category: 'Powder',
         ingredient: "westlandrange.jpg",
         image2: "application1.jpg",
+        ingredient2: "Protein content above 32%.",
+        package:"25kg bag PE inner"
     },
     {
         image: "product-02.jpg",
@@ -21,6 +23,8 @@ const products = [
         category: 'Powder',
         ingredient: "westlandrange.jpg",
         image2: "application2.jpg",
+        ingredient2: "Protein content above 80%.",
+        package:"20kg bag PE inner"
     },
     {
         image: "product-03.jpg",
@@ -31,6 +35,8 @@ const products = [
         category: 'Powder',
         ingredient: "ingredient2.jpg",
         image2: "application3.jpg",
+        ingredient2: "Milk Fat content above 26%.",
+        package:"25kg bag PE inner"
     },
     {
         image: "product-04.jpg",
@@ -51,6 +57,8 @@ const products = [
         category: 'Butter',
         ingredient: "westlandrange.jpg",
         image2: "application4.jpg",
+        ingredient2: "Fat content above 99.9%.",
+        package:"210kg iron drum"
     },
     {
         image: "product-06.jpg",
@@ -61,6 +69,8 @@ const products = [
         category: 'Butter',
         ingredient: "provico3.jpg",
         image2: "provico2.jpg",
+        ingredient2: "Fat content above 80%.",
+        package:"25kg carton PE inner"
     },
     {
         image: "product-06.jpg",
@@ -71,6 +81,8 @@ const products = [
         category: 'Butter',
         ingredient: "provico1.jpg",
         image2: "provico2.jpg",
+        ingredient2: "Fat content above 80%.",
+        package:"25kg carton PE inner"
     },
     {
         image: "product-08.jpg",
